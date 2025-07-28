@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Membership Registration</title>
+  </head>
+  <body>
+    <form method="POST" action="/submit">
+      <label for="name">Full Name</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter full name"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        required
+      />
+      <br /><br />
+
+      <label for="address">Address</label><br />
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Your Address"
+      />
+      <br /><br />
+
+      <label for="phone">Phone number</label><br />
+      <input type="text" id="phone" name="phone" placeholder="Phone number" />
+      <br /><br />
+
+      <label for="start">Start Date</label><br />
+      <input type="date" id="start" name="start" required />
+      <br /><br />
+
+      <label for="end">End Date</label><br />
+      <input type="date" id="end" name="end" required />
+      <br /><br />
+
+      <label for="gender">Gender (M/F)</label><br />
+      <input
+        type="text"
+        id="gender"
+        name="gender"
+        placeholder="M or F"
+        maxlength="1"
+      />
+      <br /><br />
+
+      <label for="disabilities">Disabilities (if any)</label><br />
+      <input
+        type="text"
+        id="disabilities"
+        name="disabilities"
+        placeholder="Disabilities (optional)"
+      />
+      <br /><br />
+
+      <label for="bmi">Body Mass Index (BMI)</label><br />
+      <input
+        type="number"
+        id="bmi"
+        name="bmi"
+        placeholder="Body mass index"
+        step="0.1"
+      />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
